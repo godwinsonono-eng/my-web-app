@@ -8,3 +8,7 @@ A brief description of what this project does.
 
 ## Tech Stack
 HTML, CSS, JavaScript
+
+# my-web-app
+Uni Projects
+
