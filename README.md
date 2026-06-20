@@ -1,6 +1,6 @@
 # My Web App
 
-A brief description of what this project does.
+A car dealership website
 
 ## Setup
 1. Clone this repo

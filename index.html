@@ -1,25 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Web App</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LnG Motors | Luxury Pre-Owned Showroom</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <header>
-    <h1>My Web App</h1>
-  </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold tracking-wider" href="index.html">LnG <span class="text-danger">MOTORS</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="inventory.html">Inventory</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <main>
-    <!-- Main content goes here -->
-  </main>
+    <header class="hero-section d-flex align-items-center text-center text-white">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">Elevate Your Driving Experience</h1>
+            <p class="lead mb-4">Discover an elite selection of handpicked premium and luxury pre-owned vehicles.</p>
+            <a href="inventory.html" class="btn btn-danger btn-lg px-4 me-2">Explore Inventory</a>
+            <a href="contact.html" class="btn btn-outline-light btn-lg px-4">Book a Consultation</a>
+        </div>
+    </header>
 
-  <footer>
-    <p>&copy; 2026</p>
-  </footer>
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="card shadow p-4 border-0 filter-card-offset">
+                <div class="row g-3 align-items-center">
+                    <div class="col-md-4">
+                        <label class="form-label fw-semibold">Select Brand</label>
+                        <select class="form-select" id="brandFilter">
+                            <option value="all">All Makes</option>
+                            <option value="mercedes">Mercedes-Benz</option>
+                            <option value="bmw">BMW</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label fw-semibold">Body Type</label>
+                        <select class="form-select" id="typeFilter">
+                            <option value="all">All Styles</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="suv">SUV</option>
+                            <option value="coupe">Coupe</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 d-grid">
+                        <label class="form-label d-none d-md-block">&nbsp;</label>
+                        <button class="btn btn-dark btn-lg" id="filterSearchBtn">Search Showroom</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script src="app.js"></script>
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Featured Arrivals</h2>
+                <p class="text-muted">Exquisite design, peerless performance, rigorously inspected.</p>
+            </div>
+            <div class="row g-4" id="featuredCarGrid">
+                <div class="col-md-4 car-item" data-brand="mercedes" data-type="sedan">
+                    <div class="card h-100 shadow-sm border-0 vehicle-card">
+                        <div class="position-relative">
+                            <img src="assets/images/car1.jpg" class="card-img-top" alt="Mercedes-Benz C-Class Base Placeholder">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-3 px-3 py-2">Just Arrived</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Mercedes-Benz C200 Avantgarde</h5>
+                            <p class="text-muted small mb-2"><i class="fa-solid fa-gauge me-1"></i> 18,400 km | Automatic | Petrol</p>
+                            <h4 class="text-danger fw-bold mb-3">$189,800</h4>
+                            <div class="d-grid">
+                                <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 car-item" data-brand="bmw" data-type="suv">
+                    <div class="card h-100 shadow-sm border-0 vehicle-card">
+                        <div class="position-relative">
+                            <img src="assets/images/car2.jpg" class="card-img-top" alt="BMW X5 Base Placeholder">
+                            <span class="badge bg-dark position-absolute top-0 start-0 m-3 px-3 py-2">Certified Pre-Owned</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">BMW X5 xDrive40i M Sport</h5>
+                            <p class="text-muted small mb-2"><i class="fa-solid fa-gauge me-1"></i> 24,100 km | Automatic | Hybrid</p>
+                            <h4 class="text-danger fw-bold mb-3">$295,000</h4>
+                            <div class="d-grid">
+                                <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 car-item" data-brand="audi" data-type="coupe">
+                    <div class="card h-100 shadow-sm border-0 vehicle-card">
+                        <div class="position-relative">
+                            <img src="assets/images/car3.jpg" class="card-img-top" alt="Audi A5 Coupe Base Placeholder">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Audi A5 Coupe 2.0 TFSI</h5>
+                            <p class="text-muted small mb-2"><i class="fa-solid fa-gauge me-1"></i> 31,000 km | Automatic | Petrol</p>
+                            <h4 class="text-danger fw-bold mb-3">$164,500</h4>
+                            <div class="d-grid">
+                                <a href="contact.html" class="btn btn-outline-dark">Enquire Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="fw-bold mb-3 text-uppercase tracking-wider">LnG <span class="text-danger">Motors</span></h5>
+                    <p class="text-muted small">Setting the gold standard for luxury automotive experiences. Our collection represents the pinnacle of engineering and value.</p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled text-muted small">
+                        <li><a href="inventory.html" class="text-reset text-decoration-none d-block py-1">Our Showroom</a></li>
+                        <li><a href="services.html" class="text-reset text-decoration-none d-block py-1">Financing Options</a></li>
+                        <li><a href="about.html" class="text-reset text-decoration-none d-block py-1">About Our Company</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Showroom Hours</h5>
+                    <p class="text-muted small mb-1">Mon - Sat: 9:00 AM - 7:00 PM</p>
+                    <p class="text-muted small">Sun & PH: 11:00 AM - 6:00 PM</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Contact Info</h5>
+                    <p class="text-muted small mb-1"><i class="fa-solid fa-location-dot me-2 text-danger"></i> 123 Alexandra Road, Singapore</p>
+                    <p class="text-muted small mb-1"><i class="fa-solid fa-phone me-2 text-danger"></i> +65 6789 0123</p>
+                    <p class="text-muted small"><i class="fa-solid fa-envelope me-2 text-danger"></i> sales@lngmotors.com.sg</p>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="text-center text-muted small">
+                <p class="mb-0">&copy; 2026 LnG Motors. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
