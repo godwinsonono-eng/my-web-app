@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bespoke Services & Financing | LnG Motors</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Global Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold tracking-wider" href="index.html">LnG <span class="text-danger">MOTORS</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="inventory.html">Inventory</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <section class="bg-dark text-white py-5 text-center inner-page-hero">
+        <div class="container py-2">
+            <h1 class="fw-bold display-4">Bespoke Automotive Solutions</h1>
+            <p class="text-muted lead">White-glove financial tailoring, premium consignment, and absolute asset transparency.</p>
+        </div>
+    </section>
+
+    <!-- Core Services Pillar Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="p-4 rounded shadow-sm border h-100 bg-white">
+                        <div class="text-danger mb-3"><i class="fa-solid fa-handshake fa-3x"></i></div>
+                        <h4 class="fw-bold">Elite Consignment</h4>
+                        <p class="text-muted small">Leverage our extensive high-net-worth network. We manage detailing, premium marketing, and complete paperwork execution to clear your vehicle at optimal market evaluations.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 rounded shadow-sm border h-100 bg-white">
+                        <div class="text-danger mb-3"><i class="fa-solid fa-chart-line fa-3x"></i></div>
+                        <h4 class="fw-bold">Instant Asset Valuation</h4>
+                        <p class="text-muted small">Our technical specialists utilize multi-layered system diagnostic telemetry combined with live auction metrics to generate transparent trade-in quotes inside 30 minutes.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 rounded shadow-sm border h-100 bg-white">
+                        <div class="text-danger mb-3"><i class="fa-solid fa-shield-halved fa-3x"></i></div>
+                        <h4 class="fw-bold">Extended In-House Warranty</h4>
+                        <p class="text-muted small">Drive with absolute confidence. Every asset delivered through our showroom threshold features an inclusive, institutional mechanical guarantee covering powertrain groups.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Auto Loan Amortization Widget -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5">
+                    <h2 class="fw-bold mb-3">Structured Financial Tailoring</h2>
+                    <p class="text-secondary">We partner directly with elite tier-1 banking institutions to offer customized auto loan interest packages configured to support your corporate capital profiles.</p>
+                    <p class="text-secondary small">Use our dynamic calculator module to accurately calculate your estimated monthly payments based on varying down payments and interest structures.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="card p-4 border-0 shadow-sm bg-white">
+                        <h4 class="fw-bold text-dark mb-4"><i class="fa-solid fa-calculator text-danger me-2"></i>Financing Calculator</h4>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="calcPrice" class="form-label fw-semibold small">Vehicle Purchase Price ($)</label>
+                                <input type="number" class="form-control" id="calcPrice" value="189800">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="calcDownPayment" class="form-label fw-semibold small">Down Payment ($)</label>
+                                <input type="number" class="form-control" id="calcDownPayment" value="57000">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="calcInterest" class="form-label fw-semibold small">Annual Interest Rate (%)</label>
+                                <input type="number" class="form-control" id="calcInterest" value="2.78" step="0.01">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="calcTerm" class="form-label fw-semibold small">Loan Tenure (Years)</label>
+                                <select class="form-select" id="calcTerm">
+                                    <option value="3">3 Years (36 Months)</option>
+                                    <option value="5 text-selected">5 Years (60 Months)</option>
+                                    <option value="7" selected>7 Years (84 Months)</option>
+                                </select>
+                            </div>
+                            <div class="col-12 d-grid pt-2">
+                                <button type="button" class="btn btn-dark fw-bold text-uppercase" id="triggerCalculationBtn">Calculate Installment</button>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <div class="p-3 rounded bg-light text-center">
+                            <span class="text-muted small d-block text-uppercase fw-semibold mb-1">Estimated Monthly Payment</span>
+                            <h2 class="text-danger fw-bold mb-0" id="monthlyInstallmentOutput">$0.00</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="fw-bold mb-3 text-uppercase tracking-wider">LnG <span class="text-danger">Motors</span></h5>
+                    <p class="text-muted small">Setting the gold standard for luxury automotive experiences. Our collection represents the pinnacle of engineering and value.</p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled text-muted small">
+                        <li><a href="inventory.html" class="text-reset text-decoration-none d-block py-1">Our Showroom</a></li>
+                        <li><a href="services.html" class="text-reset text-decoration-none d-block py-1">Financing Options</a></li>
+                        <li><a href="about.html" class="text-reset text-decoration-none d-block py-1">About Our Company</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Showroom Hours</h5>
+                    <p class="text-muted small mb-1">Mon - Sat: 9:00 AM - 7:00 PM</p>
+                    <p class="text-muted small">Sun & PH: 11:00 AM - 6:00 PM</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Contact Info</h5>
+                    <p class="text-muted small mb-1"><i class="fa-solid fa-location-dot me-2 text-danger"></i> 123 Alexandra Road, Singapore</p>
+                    <p class="text-muted small mb-1"><i class="fa-solid fa-phone me-2 text-danger"></i> +65 6789 0123</p>
+                    <p class="text-muted small"><i class="fa-solid fa-envelope me-2 text-danger"></i> sales@lngmotors.com.sg</p>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="text-center text-muted small">
+                <p class="mb-0">&copy; 2026 LnG Motors. All Rights Reserved. Prepared for Web App Assignment.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core Engine Scripts Script -->
+    <script src="js/main.js"></script>
+</body>
+</html>
