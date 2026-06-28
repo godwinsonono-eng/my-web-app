@@ -118,3 +118,29 @@ document.addEventListener("DOMContentLoaded", function () {
         executeShowroomFiltering();
     }
 });
+
+// Interactive Currency Converter Logic Module
+document.addEventListener('DOMContentLoaded', function() {
+    const convertBtn = document.getElementById('convertBtn');
+    const usdInput = document.getElementById('usdInput');
+    const kesResult = document.getElementById('kesResult');
+
+    if (convertBtn && usdInput && kesResult) {
+        convertBtn.addEventListener('click', function() {
+            const usdAmount = parseFloat(usdInput.value);
+            
+            // Validation check if input is empty or invalid
+            if (isNaN(usdAmount) || usdAmount <= 0) {
+                kesResult.innerHTML = "<span class='text-danger'>Please enter a valid amount.</span>";
+                return;
+            }
+
+            // Calculation using June 2026 base evaluation conversion (1 USD = 130 KES)
+            const exchangeRate = 130;
+            const kesAmount = usdAmount * exchangeRate;
+
+            // Render beautifully formatted localized currency output
+            kesResult.innerHTML = `= KES ${kesAmount.toLocaleString('en-KE', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+        });
+    }
+});
